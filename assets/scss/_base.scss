@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@font-face {
+    font-family: 'ethnocentricregular';
+    src: url('../font/ethnocentric_rg-webfont.woff2') format('woff2'),
+         url('../font/ethnocentric_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+// vars
+$mainFont:'ethnocentricregular';
+$secondaryFont: "Nunito Sans", sans-serif;
+$mainColor:#083067;
+$secondaryColor:#1E1E1E;
+
+// headings
+h1,
+h2{
+    font-family: $mainFont;
+    overflow: hidden;
+}
+h3{
+    overflow: hidden;
+}
+p,
+span,
+a,
+strong,
+em,
+.heading-serif{
+    font-family: $secondaryFont;
+}
+// container
+.container-fluid{
+    padding: 0 30px;
+}
+
+// btn
+.btn-outline-white{
+    border-radius: 12px;
+    border: solid 1px white;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    color: white;
+    width: 300px;
+    text-transform: uppercase;
+    &:hover{
+        background-color: white;
+        color: $secondaryColor;
+    }
+}
+// bgs
+.bg-dark{
+    background-color: $secondaryColor;
+}
+.bg-main{
+    background-color: $mainColor;
+}
+.bg-juri{
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-juri-inverse{
+    background-image: url(../img/bg-inverse.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

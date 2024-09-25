@@ -1,0 +1,54 @@
+// header
+.header-intro{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    h1{
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: $mainFont;
+        color: white;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-color: rgba(38, 37, 37,.8);
+        width: 100%;
+        border-bottom: white 1px solid;
+        a{
+            color: white;
+            text-transform: uppercase;
+            &:hover{
+               color:red;
+            }
+        }
+        .dropdown-menu{
+            background-color: $secondaryColor;
+            color: white;
+        }
+        svg{
+            height: 26px;
+            margin-top: 4px;
+        }
+        .navbar-toggler{
+            border: solid white 1px;
+            svg{
+                fill: white;
+                width: 30px;
+            }
+        }
+    }
+}

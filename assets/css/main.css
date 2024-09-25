@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ethnocentricregular";
+  src: url("../font/ethnocentric_rg-webfont.woff2") format("woff2"), url("../font/ethnocentric_rg-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+h1,
+h2 {
+  font-family: "ethnocentricregular";
+  overflow: hidden;
+}
+
+h3 {
+  overflow: hidden;
+}
+
+p,
+span,
+a,
+strong,
+em,
+.heading-serif {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container-fluid {
+  padding: 0 30px;
+}
+
+.btn-outline-white {
+  border-radius: 12px;
+  border: solid 1px white;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  color: white;
+  width: 300px;
+  text-transform: uppercase;
+}
+.btn-outline-white:hover {
+  background-color: white;
+  color: #1E1E1E;
+}
+
+.bg-dark {
+  background-color: #1E1E1E;
+}
+
+.bg-main {
+  background-color: #083067;
+}
+
+.bg-juri {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-juri-inverse {
+  background-image: url(../img/bg-inverse.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-intro {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.header-intro h1 {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "ethnocentricregular";
+  color: white;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.header-intro video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.header-intro nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(38, 37, 37, 0.8);
+  width: 100%;
+  border-bottom: white 1px solid;
+}
+.header-intro nav a {
+  color: white;
+  text-transform: uppercase;
+}
+.header-intro nav a:hover {
+  color: red;
+}
+.header-intro nav .dropdown-menu {
+  background-color: #1E1E1E;
+  color: white;
+}
+.header-intro nav svg {
+  height: 26px;
+  margin-top: 4px;
+}
+.header-intro nav .navbar-toggler {
+  border: solid white 1px;
+}
+.header-intro nav .navbar-toggler svg {
+  fill: white;
+  width: 30px;
+}
+
+.sembradora-rc {
+  position: relative;
+  z-index: 4;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+.cta {
+  height: 500px;
+  margin-top: -10px;
+  background-position: center left;
+}
+
+.footer h3 {
+  font-family: "Nunito Sans", sans-serif !important;
+  font-weight: 600;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+  transition: all ease 0.5s;
+}
+.footer a svg {
+  width: 30px;
+  fill: white;
+}
+
+@media (width <= 768px) {
+  .btn-outline-white {
+    width: 100%;
+  }
+  .header-intro {
+    height: 45vh;
+  }
+  .header-intro nav {
+    position: fixed;
+    z-index: 999999;
+    background-color: #1E1E1E;
+  }
+  .header-intro h1 {
+    font-size: 1em !important;
+  }
+  .sembradora-rc p {
+    width: auto;
+  }
+  .sembradora-rc img:nth-child(2),
+  .sembradora-rc img:nth-child(3),
+  .sembradora-rc img:nth-child(4) {
+    display: none;
+  }
+  .sembradora-mh {
+    padding-top: 30px;
+  }
+  .sembradora-mh a {
+    margin-bottom: 30px;
+  }
+  .sembradora-latina .px-4,
+  .sembradora-neomax .px-4,
+  .sembradora-rc .px-4 {
+    padding-top: 30px;
+  }
+  .sembradora-latina .px-4 a,
+  .sembradora-neomax .px-4 a,
+  .sembradora-rc .px-4 a {
+    margin-bottom: 30px;
+  }
+  .video {
+    display: none;
+  }
+  .cta {
+    height: 400px;
+  }
+  .cta .row .col-md-6 {
+    padding: 0 30px;
+  }
+  .cta .row .col-md-6 h2 {
+    font-size: 1em !important;
+  }
+  .sembradora-latina .row,
+  .sembradora-rc .row {
+    flex-direction: column-reverse;
+  }
+  .air-drill {
+    padding-bottom: 30px;
+  }
+  .air-drill img {
+    width: 300px;
+  }
+  .footer .border-end {
+    border: none !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,74 @@
+// breakpoints
+@media (width <= 768px){
+    .btn-outline-white{
+        width: 100%;
+    }
+    .header-intro{
+        height: 45vh;
+        nav{
+            position: fixed;
+            z-index: 999999;
+            background-color: $secondaryColor;
+        }
+        h1{
+            font-size: 1em!important;
+        }
+    }
+    .sembradora-rc{
+        p{
+            width: auto;
+        }
+        img:nth-child(2),
+        img:nth-child(3),
+        img:nth-child(4){
+            display: none;
+        }
+    } 
+    .sembradora-mh{
+        padding-top: 30px;
+        a{
+            margin-bottom: 30px;
+        }
+    }
+    .sembradora-latina,
+    .sembradora-neomax,
+    .sembradora-rc{
+        .px-4{
+            padding-top: 30px;
+            a{
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .video{
+        display: none;
+    }
+    .cta{
+        height: 400px;
+        .row{
+           .col-md-6{
+                padding: 0 30px;
+                h2{
+                    font-size: 1em!important;
+                }
+           }
+        }
+    }
+    .sembradora-latina,
+    .sembradora-rc{
+        .row{
+            flex-direction: column-reverse;
+        }
+    }
+    .air-drill{
+        padding-bottom: 30px;
+        img{
+            width: 300px;
+        }
+    }
+    .footer{
+        .border-end{
+            border: none!important;
+        }
+    }
+}

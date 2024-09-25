@@ -1,0 +1,27 @@
+// footer
+.footer{
+    h3{
+        font-family: $secondaryFont!important;
+        font-weight: 600;
+    }
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                color: white;
+                font-weight: 300;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+            transition: all ease .5s;
+        }
+        svg{
+            width: 30px;
+            fill: white;
+        }
+    }
+}
