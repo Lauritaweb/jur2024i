@@ -224,5 +224,10 @@ main {
     border: none !important;
   }
 }
+@media (width < 430px) {
+  .header-intro {
+    height: 30vh;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
