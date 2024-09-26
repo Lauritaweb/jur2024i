@@ -75,5 +75,8 @@
 @media (width <430px){
     .header-intro{
         height: 30vh;
+        h1{
+            display: none;
+        }
     }
 }

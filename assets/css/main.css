@@ -228,6 +228,9 @@ main {
   .header-intro {
     height: 30vh;
   }
+  .header-intro h1 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
