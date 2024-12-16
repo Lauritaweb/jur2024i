@@ -5,7 +5,7 @@
     overflow: hidden;
     h1{
         position: absolute;
-        z-index: 3;
+        z-index: 2;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -30,18 +30,20 @@
         border-bottom: white 1px solid;
         a{
             color: white;
-            text-transform: uppercase;
             &:hover{
                color:red;
+            }
+            .logo{
+                height: 40px;
             }
         }
         .dropdown-menu{
             background-color: $secondaryColor;
             color: white;
         }
-        svg{
-            height: 26px;
-            margin-top: 4px;
+        img{
+            height: 16px;
+            margin: 4px 4px 0 0;
         }
         .navbar-toggler{
             border: solid white 1px;
@@ -50,5 +52,32 @@
                 width: 30px;
             }
         }
+    }
+}
+// nav sin el header del index
+.menu{
+    background-color: $secondaryColor;
+    .logo{
+        height: 40px;
+    }
+    a{
+        &:hover{
+            color: red;
+        }
+        &.active{
+            color: red;
+        }
+    }
+    .navbar-nav .nav-link.show{
+        color: red!important;
+    }
+    .dropdown-menu{
+        --bs-dropdown-bg: $secondaryColor!important;
+        background-color: $secondaryColor;
+        color: red;
+    }
+    img{
+        height: 16px;
+        margin: 4px 4px 0 0;
     }
 }

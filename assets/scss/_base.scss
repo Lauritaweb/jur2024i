@@ -14,7 +14,7 @@
 $mainFont:'ethnocentricregular';
 $secondaryFont: "Nunito Sans", sans-serif;
 $mainColor:#083067;
-$secondaryColor:#1E1E1E;
+$secondaryColor:rgb(30, 30, 30);
 
 // headings
 h1,
@@ -30,14 +30,31 @@ span,
 a,
 strong,
 em,
+li,
 .heading-serif{
     font-family: $secondaryFont;
 }
+// 
+// utilities
+// 
 // container
 .container-fluid{
-    padding: 0 30px;
+    padding: 0 40px;
 }
-
+// text outline
+.text-outline{
+    font-weight: bold; 
+    color: transparent; 
+    -webkit-text-stroke: 1px rgb(255, 255, 255); 
+    font-family: $secondaryFont;
+}
+.text-no-outline{
+    -webkit-text-stroke: 0 transparent!important;
+    font-family: $secondaryFont;
+}
+.text-main{
+    font-family: $mainFont;
+}
 // btn
 .btn-outline-white{
     border-radius: 12px;
@@ -50,6 +67,7 @@ em,
     color: white;
     width: 300px;
     text-transform: uppercase;
+    text-decoration: none;
     &:hover{
         background-color: white;
         color: $secondaryColor;
@@ -71,4 +89,8 @@ em,
     background-image: url(../img/bg-inverse.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+// imgs
+.img-w100{
+    width: 100%;
 }

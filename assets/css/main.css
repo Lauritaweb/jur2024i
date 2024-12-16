@@ -24,12 +24,29 @@ span,
 a,
 strong,
 em,
+li,
 .heading-serif {
   font-family: "Nunito Sans", sans-serif;
 }
 
 .container-fluid {
-  padding: 0 30px;
+  padding: 0 40px;
+}
+
+.text-outline {
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.text-no-outline {
+  -webkit-text-stroke: 0 transparent !important;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.text-main {
+  font-family: "ethnocentricregular";
 }
 
 .btn-outline-white {
@@ -43,14 +60,15 @@ em,
   color: white;
   width: 300px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .btn-outline-white:hover {
   background-color: white;
-  color: #1E1E1E;
+  color: rgb(30, 30, 30);
 }
 
 .bg-dark {
-  background-color: #1E1E1E;
+  background-color: rgb(30, 30, 30);
 }
 
 .bg-main {
@@ -69,6 +87,10 @@ em,
   background-size: cover;
 }
 
+.img-w100 {
+  width: 100%;
+}
+
 .header-intro {
   position: relative;
   height: 100vh;
@@ -76,7 +98,7 @@ em,
 }
 .header-intro h1 {
   position: absolute;
-  z-index: 3;
+  z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -102,18 +124,20 @@ em,
 }
 .header-intro nav a {
   color: white;
-  text-transform: uppercase;
 }
 .header-intro nav a:hover {
   color: red;
 }
+.header-intro nav a .logo {
+  height: 40px;
+}
 .header-intro nav .dropdown-menu {
-  background-color: #1E1E1E;
+  background-color: rgb(30, 30, 30);
   color: white;
 }
-.header-intro nav svg {
-  height: 26px;
-  margin-top: 4px;
+.header-intro nav img {
+  height: 16px;
+  margin: 4px 4px 0 0;
 }
 .header-intro nav .navbar-toggler {
   border: solid white 1px;
@@ -121,6 +145,31 @@ em,
 .header-intro nav .navbar-toggler svg {
   fill: white;
   width: 30px;
+}
+
+.menu {
+  background-color: rgb(30, 30, 30);
+}
+.menu .logo {
+  height: 40px;
+}
+.menu a:hover {
+  color: red;
+}
+.menu a.active {
+  color: red;
+}
+.menu .navbar-nav .nav-link.show {
+  color: red !important;
+}
+.menu .dropdown-menu {
+  --bs-dropdown-bg: $secondaryColor!important;
+  background-color: rgb(30, 30, 30);
+  color: red;
+}
+.menu img {
+  height: 16px;
+  margin: 4px 4px 0 0;
 }
 
 .sembradora-rc {
@@ -136,6 +185,16 @@ main {
   height: 500px;
   margin-top: -10px;
   background-position: center left;
+}
+
+.wa {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 5;
+}
+.wa img {
+  width: 60px;
 }
 
 .footer h3 {
@@ -159,6 +218,10 @@ main {
   fill: white;
 }
 
+.navbar a {
+  color: white;
+}
+
 @media (width <= 768px) {
   .btn-outline-white {
     width: 100%;
@@ -169,7 +232,7 @@ main {
   .header-intro nav {
     position: fixed;
     z-index: 999999;
-    background-color: #1E1E1E;
+    background-color: rgb(30, 30, 30);
   }
   .header-intro h1 {
     font-size: 1em !important;
@@ -222,6 +285,9 @@ main {
   }
   .footer .border-end {
     border: none !important;
+  }
+  .img-w100 {
+    width: 100%;
   }
 }
 @media (width < 430px) {
